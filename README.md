@@ -138,3 +138,30 @@ If you're a producer with prompts that actually work, open a PR. The goal is a p
 ---
 
 *Maintained by [Joan Casellas](https://github.com/canmils) — Senior Game Producer.*
+
+## Start in five minutes
+
+No installation or key is needed to read these prompts. Use your chosen AI tool under its own account/billing terms. Pick a prompt, replace bracketed placeholders and paste fictional or permitted input. Example: ask the status-update prompt to summarize “Art finished; QA starts Monday; audio approval pending with Alex.” Compare every output fact and owner to the source. Expected result: a draft you review and adapt; nothing is automatically sent.
+
+Download ZIP or clone:
+
+```sh
+git clone https://github.com/canmils/ai-prompts-for-game-production.git
+cd ai-prompts-for-game-production
+```
+
+Do not paste private company or personal data unless that provider/workflow is permitted. Prompts do not verify current law or certify game rules. To validate a change, include a fictional input/output example and inspect placeholders.
+
+## Update, troubleshoot and contribute
+
+Stop the app with Ctrl+C. Back up your own configuration, inputs and outputs first. Run `git status`; commit tracked edits on a branch before pulling. Then `git pull --ff-only` and reinstall dependencies with the same environment/package manager used above. Restart with the documented run command. Resolve divergent history instead of forcing away changes.
+
+Missing command: install the prerequisite and reopen the terminal. Missing module: use the same interpreter/package manager for install and run. Missing file: check the repository root and sample setup. Port busy: stop the earlier server. Provider failure: check key, credit, model access and connectivity; repeated calls can incur another charge.
+
+Report bugs or suggest changes at https://github.com/canmils/ai-prompts-for-game-production/issues. Include OS/runtime, commit, exact command, safe sample, sanitized error and expected/actual result. See [CONTRIBUTING.md](CONTRIBUTING.md) for fork → branch → test → pull request. Never share keys or private company data.
+
+See [ONBOARDING_CHECKS.md](ONBOARDING_CHECKS.md) for checks actually run and limits.
+
+## License
+
+MIT; see [LICENSE](LICENSE). External inputs/content retain their own rights.

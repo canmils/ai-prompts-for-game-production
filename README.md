@@ -1,14 +1,14 @@
 # AI Prompts for Game Production
 
-Prompts and workflows I use with AI tools (Claude, ChatGPT, Copilot) to do my job as a game producer faster and better.
+Editable prompt templates for communication, planning and documentation in game production.
 
-Not theoretical. These are things I actually run.
+**Status: documentation library.** Copy a template into your chosen AI tool, use fictional or permitted input and review the draft. No app, installation or API integration is included; time savings have not been measured.
 
 ---
 
 ## Why this exists
 
-Most AI prompt libraries are for developers, marketers, or writers. There's almost nothing for game producers in regulated industries. These prompts are built around the specific problems of slot game production: tight certification constraints, cross-functional coordination, and high-stakes release timelines.
+These templates focus on slot production tasks: certification dependencies, cross-functional coordination, release timelines and source-based reporting.
 
 ---
 
@@ -95,14 +95,17 @@ Tone: Honest, not defensive. We're trying to learn, not assign blame.
 
 **Review game rules text for clarity**
 ```
-You are reviewing player-facing game rules for a slot game being submitted to [JURISDICTION] regulators.
-Review the following text for:
-1. Ambiguous or unclear language
-2. Missing mandatory disclosures (RTP, volatility, max win)
-3. Anything that contradicts responsible gambling requirements
-Flag issues with specific line numbers/quotes.
+Review player-facing game rules for clarity against the supplied requirements.
+1. Identify ambiguous wording and internal contradictions.
+2. Compare the text to the supplied, dated jurisdiction requirements and approved math/specification.
+3. Quote the source and rule-text location for every potential discrepancy.
+4. If a requirement or specification is missing, label the topic UNVERIFIED and ask for it. Do not invent legal requirements or approve compliance.
 
-[PASTE GAME RULES HERE]
+Jurisdiction and version: [JURISDICTION / GAME VERSION]
+Requirements and approved specification: [PASTE PERMITTED SOURCES]
+Game rules: [PASTE GAME RULES HERE]
+
+Output: issues for a human compliance reviewer, not a certification decision.
 ```
 
 ---
@@ -125,9 +128,9 @@ Keep it realistic — I'm not looking for spin.
 
 ## Notes on using these
 
-- **Always review AI output before sending.** These prompts produce 80% of the work. The last 20% — judgment, tone, accuracy — is yours.
-- **The more context you give, the better the output.** Paste real content, not placeholder descriptions.
-- **Some prompts work better with Claude, some with GPT.** I note differences where I've found them.
+- **Always review AI output before sending.** Verify facts, owners, dates and source support. There is no measured percentage of work automated.
+- **Supply relevant context.** Use fictional examples or material permitted by your organisation and provider settings. Flag missing facts rather than inviting guesses.
+- **Record model and date when comparing results.** Outputs vary; no model-quality benchmark is provided here.
 
 ---
 
@@ -152,15 +155,15 @@ cd ai-prompts-for-game-production
 
 Do not paste private company or personal data unless that provider/workflow is permitted. Prompts do not verify current law or certify game rules. To validate a change, include a fictional input/output example and inspect placeholders.
 
-## Update, troubleshoot and contribute
+## Review, update and contribute
 
-Stop the app with Ctrl+C. Back up your own configuration, inputs and outputs first. Run `git status`; commit tracked edits on a branch before pulling. Then `git pull --ff-only` and reinstall dependencies with the same environment/package manager used above. Restart with the documented run command. Resolve divergent history instead of forcing away changes.
+There is no server, runtime or dependency installation to troubleshoot. If a prompt produces an inaccurate draft, compare it with the supplied source, note the model/date and revise the instructions or context.
 
-Missing command: install the prerequisite and reopen the terminal. Missing module: use the same interpreter/package manager for install and run. Missing file: check the repository root and sample setup. Port busy: stop the earlier server. Provider failure: check key, credit, model access and connectivity; repeated calls can incur another charge.
+To update a local clone, inspect `git status`, preserve edits on your branch and run `git pull --ff-only`. You can also read the latest templates directly on GitHub.
 
-Report bugs or suggest changes at https://github.com/canmils/ai-prompts-for-game-production/issues. Include OS/runtime, commit, exact command, safe sample, sanitized error and expected/actual result. See [CONTRIBUTING.md](CONTRIBUTING.md) for fork → branch → test → pull request. Never share keys or private company data.
+For a change, include a fictional input, an illustrative output and the specific review criteria: correct facts, preserved uncertainty, clear owners and no invented approvals. Label sample outputs as authored or model-generated. Do not describe one example as proof of general quality.
 
-See [ONBOARDING_CHECKS.md](ONBOARDING_CHECKS.md) for checks actually run and limits.
+Report suggestions at https://github.com/canmils/ai-prompts-for-game-production/issues. See [CONTRIBUTING.md](CONTRIBUTING.md) for the review workflow and [ONBOARDING_CHECKS.md](ONBOARDING_CHECKS.md) for verification limits.
 
 ## License
 
